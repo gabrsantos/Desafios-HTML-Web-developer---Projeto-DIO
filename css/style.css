@@ -12,6 +12,18 @@ p.marcadores{
     font-weight: bolder;
 }
 
+div.topo{
+    margin-top: 5%
+}
+
+div.rodape{
+    margin-bottom: 5%
+}
+
+div.row-center{
+    justify-content: center;
+}
+
 div.caixa-entrada{
     background-color: black;
     color: white;
@@ -26,6 +38,14 @@ div.caixa-saida{
     margin: auto;
 }
 
+div.caixa-resposta{
+    background-color: black;
+    color: white;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
 div.borda-exemplos{
     border-width: 3px;
     border-style: double;
@@ -33,6 +53,16 @@ div.borda-exemplos{
     width: 40%;
     height: 200px;
     margin: auto;
+}
+
+div.borda-respostas{
+    border-width: 3px;
+    border-style: double;
+    border-color: #000;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
 }
 
 label.marcadores{
