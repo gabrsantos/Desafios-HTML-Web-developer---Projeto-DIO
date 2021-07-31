@@ -1,11 +1,21 @@
+h1.titulo{
+    margin-bottom: 3%;
+}
+
 h3.titulo-desafio{
     text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 h5.titulo-reposta{
-    margin-top: 20px;
+    margin-top: 5%;
     margin-bottom: 20px;
     text-align: center;
+}
+
+hr.divisao{
+    margin-top: 5%;
 }
 
 p.marcadores{
@@ -16,12 +26,23 @@ div.topo{
     margin-top: 5%
 }
 
+div.btn-topo{
+    position: fixed;
+    margin-left: 95%;
+    bottom: 1%;
+}
+
+div.items{
+    justify-content: center;
+}
+
 div.rodape{
     margin-bottom: 5%
 }
 
 div.row-center{
     justify-content: center;
+    margin-top: 5%;
 }
 
 div.caixa-entrada{

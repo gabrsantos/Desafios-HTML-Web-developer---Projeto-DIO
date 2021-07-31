@@ -1,4 +1,5 @@
 var Desafios = function () {
+
     var desafio_1 = function(){
 
         $("#resposta_desafio_1").html('</br>');
@@ -78,15 +79,21 @@ var Desafios = function () {
         
     }
 
+    var funcoes_desafios = function(){
+
+        $('#btn_topo').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');
+        });
+
+    }
+
 
     function validaCampo(str){
-
         if(!isNaN(parseFloat(str))){
-            formataString(str);
             nums = formataString(str);
-            searchLetters = nums.every(isLetter);
             
-            return searchLetters;
+            return searchLetters = nums.every(isLetter);
             
         }else{
             return;
@@ -96,9 +103,8 @@ var Desafios = function () {
 
     function formataString(str){
         var limpaString = str.replace(/ /g, '');
-        var numArray = limpaString.split(',');
 
-        return numArray;
+        return numArray = limpaString.split(',');
     }
 
 
@@ -134,9 +140,8 @@ var Desafios = function () {
             }
 
         }
-        result = nums.join("</br>");
 
-        return result;
+        return result = nums.join("</br>");
     }
 
     function respDesafio3(value){
@@ -218,6 +223,7 @@ var Desafios = function () {
 
     return {
         init: function () {
+            funcoes_desafios();
             desafio_1();
             desafio_2();
             desafio_3();
